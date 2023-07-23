@@ -14,9 +14,16 @@ function getBugs(){
     .then(response => response.json())
 }
 
+// bugs info
+function getBugInfo(bugID){
+    return fetch(`${baseUrl}/bugs/${bugID}`)
+    .then(response => response.json())
+}
+
 
 // export apis
 export {
     getVillagers,
-    getBugs
+    getBugs,
+    getBugInfo
 }

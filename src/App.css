@@ -44,3 +44,26 @@ a{
   border: .5px solid lightgreen;
   width: 200px;
 }
+.bugInfo {
+  border: solid crimson;
+  width: 700px;
+}
+.blathers {
+  font-style: italic;
+}
+.blathers > span {
+  font-weight: 700;
+}
+.bugIMG {
+  /* border: solid blue; */
+  position: relative;
+  margin-top: -50px;
+  width: 400px;
+}
+.bugData {
+  position: relative;
+  margin-top: -65px;
+}
+.bugData > h3 > span {
+  font-weight: 300;
+}
