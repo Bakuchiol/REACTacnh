@@ -22,3 +22,25 @@ a{
   display: flex;
   justify-content: center;
 }
+/* villager */
+#villagerComp{
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  flex-wrap: wrap;
+}
+#villagerCard {
+  border: 1px solid green;
+  width: 300px;
+  margin-bottom: 20px;
+}
+/* bugs */
+#bugComp {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#bugCard {
+  border: .5px solid lightgreen;
+  width: 200px;
+}
