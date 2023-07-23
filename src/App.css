@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+}
+
+#navBar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px 0 30px;
+}
+.navUl {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+/* children */
+#children {
+  display: flex;
+  justify-content: center;
+}
