@@ -7,7 +7,7 @@ function NavBar() {
       <h1>Animal Crossing</h1>
       <ul className='navUl'>
         <li><Link to='/'>Home</Link></li>
-        <li><Link to='/Villagers'>Villagers</Link></li>
+        {/* <li><Link to='/Villagers'>Villagers</Link></li> */}
         <li><Link to='/Bugs'>Bugs</Link></li>
       </ul>
     </div>

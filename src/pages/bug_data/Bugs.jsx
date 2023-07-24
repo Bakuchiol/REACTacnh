@@ -18,8 +18,8 @@ function Bugs(props) {
 
   return (
     <MainLayout>
-      <div>
-        <h1>*BUGS PAGE*</h1>
+      <div id='bugWrap'>
+        {/* <h1>*BUGS PAGE*</h1> */}
         {Bugs.length ? 
           <div id='bugComp'>
           {bugs.map((bug) => {

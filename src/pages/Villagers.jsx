@@ -19,8 +19,8 @@ function Villagers(props) {
 
   return (
     <MainLayout>
-      <div>
-        <h1>*VILLAGERS PAGE*</h1>
+      <div id='villagerWrap'>
+        {/* <h1>*VILLAGERS PAGE*</h1> */}
         <div id='villagerComp'>
           {/* map each villager data to a component and pass state*/}
           {villagers.map((villager) => {

@@ -5,7 +5,14 @@
 #navBar {
   display: flex;
   justify-content: space-between;
-  margin: 0 30px 0 30px;
+  width: 96vw;
+  height: 70px;
+  margin-bottom: -10px;
+  padding: 0 30px 0 30px;
+  background-color: #68b893;
+  color: #f5f5f5;
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  position: fixed;
 }
 .navUl {
   display: flex;
@@ -13,9 +20,12 @@
   gap: 40px;
   list-style: none;
 }
-a{
+.navUl a{
   text-decoration: none;
-  color: black;
+  text-shadow: 1px 1px 1px rgb(85, 88, 89);
+  color: #f5f5f5;
+  font-size: 18px;
+  font-weight: bold;
 }
 /* children */
 #children {
@@ -23,6 +33,24 @@ a{
   justify-content: center;
 }
 /* villager */
+#villagerWrap{
+  background-image: url('https://pbs.twimg.com/media/EPngkecWAAAI16e.jpg');
+  background-size: contain;
+  padding-top: 60px;
+  margin-top: 62px;
+  z-index: -9;
+}
+.villagerTitle {
+  display: flex;
+  justify-content: center;
+}
+#villagerWrap h1{
+  background-color: #fff9e5;
+  border-radius: 30px;
+  width: 400px;
+  padding: 10px;
+  color: #017c74;
+}
 #villagerComp{
   display: flex;
   justify-content: center;
@@ -30,24 +58,68 @@ a{
   flex-wrap: wrap;
 }
 #villagerCard {
-  border: 1px solid green;
+  /* border: 1px solid green; */
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background-image: url('https://i.pinimg.com/474x/ac/25/f6/ac25f6b822020291bb56703a00c3522a.jpg');
+  background-size: cover;
   width: 300px;
+  height: 400px;
   margin-bottom: 20px;
+  padding: 30px 5px 0 5px;
 }
+
+.villagerIMG {
+  /* border:solid pink; */
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin-top: 10px;
+}
+.villagerName {
+  text-shadow: 1px 1px 2px rgb(208, 233, 244);
+}
+.villagerPhrase {
+  margin-top: -4px;
+}
+
 /* bugs */
+#bugWrap {
+  background-color: #f8eebc;
+  padding: 40px;
+}
 #bugComp {
+  margin-top: 70px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 #bugCard {
-  border: .5px solid lightgreen;
+  border: .5px solid #68b893;
   width: 200px;
+  height: 200px;
+}
+.bug{
+  color: black;
+}
+a{
+  text-decoration: none;
+}
+#bugInfo{
+  margin-top: 150px;
+
 }
 .bugInfo {
-  border: solid crimson;
+  /* border: solid crimson; */
   width: 700px;
 }
+.bugName {
+  position: relative;
+  margin-top: -60px;
+}
+.bugData > h2 > span {
+  font-weight: 300;
+}
+
 .blathers {
   font-style: italic;
 }
@@ -59,11 +131,4 @@ a{
   position: relative;
   margin-top: -50px;
   width: 400px;
-}
-.bugData {
-  position: relative;
-  margin-top: -65px;
-}
-.bugData > h3 > span {
-  font-weight: 300;
 }

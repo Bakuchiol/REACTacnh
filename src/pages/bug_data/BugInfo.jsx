@@ -17,18 +17,18 @@ function BugInfo({props}) {
         // grabs specific info from url based on bug
         getBugInfo(location.state.bug.id) // ?? wrong path?? if bug.id = endless loop
         .then(bugData => setBugInfo(bugData))
-    }, [])
+    })
 
   return (
-    <div id='bugInfo'>
         <MainLayout>
+    <div id='bugInfo'>
             {/* <p>BUG INFO HERE</p> */}
             <div className='bugInfo'>
                 <img src={bugInfo?.['image_uri']} alt="bugImg" className='bugIMG'/>
                 {/* name not showing!! file path xxx */}
-                <h3>{bugInfo?.['file-name']}</h3>
+                <h3 className='bugName'>{bugInfo?.['file-name']}</h3>
                 <div className='bugData'>
-                    <h2>🔔{bugInfo?.price}🔔</h2>
+                    <h2>Price: {bugInfo?.price} bells</h2>
                     {/* <h3>"{bugInfo?.['catch-phrase']}"
                         <br />
                         <span>- Villager</span>
@@ -41,8 +41,8 @@ function BugInfo({props}) {
                     </p>
                 </div>
             </div>
-        </MainLayout>
     </div>
+        </MainLayout>
   )
 }
 
